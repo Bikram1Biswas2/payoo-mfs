@@ -1,3 +1,5 @@
+// Added Money Function
+
 document.getElementById('add-money-btn').addEventListener('click', function(event){
     event.preventDefault();
     console.log('Add Money Button clicked');
@@ -12,7 +14,6 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
 
     // 
  
-
     if(getPin === '9876'){
         const totalBalance = document.getElementById('available-balance').textContent
         console.log(totalBalance);
@@ -22,11 +23,31 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
 
         // display total Balance
         document.getElementById('available-balance').innerText = updatedBalance
-        
             
     } else{
         alert('Wrong Pin');
     }
+})
 
+// Withdraw Money Function
+
+document.getElementById('withdraw-money-btn').addEventListener('click', function(event){
+    event.preventDefault();
+    console.log('withdraw button clicked');
+
+    const withdrawMoney = document.getElementById('input-amount-withdraw').value;
+
+    const withdrawPin = document.getElementById('input-pin-Number-withdraw').value;
     
+    if(withdrawPin === '9876'){
+
+        const availableBalance = document.getElementById('available-balance').innerText;
+
+        const restBalance = Number(availableBalance) - Number(withdrawMoney)
+
+        document.getElementById('available-balance').innerText = restBalance
+
+    }else{
+        alert('Cant withdraw money')
+    }
 })
