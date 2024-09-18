@@ -33,19 +33,19 @@
 
                  <!-- Add and withdraw button -->
                   <div>
-                    <button class="btn">Add Money</button>
-                    <button class="btn">WithDraw Money</button>
+                    <button id="added-form-btn"  class="btn">Add Money</button>
+                    <button id="withdraw-form-btn" class="btn">WithDraw Money</button>
                   </div>
                   <div class="divider"></div>
 
                   <!-- Add money form starts -->
-                  <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="added-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text">Amount</span>
+                          <span class="label-text">Added Amount</span>
                         </label>
-                        <input id="input-amount-added" type="text" placeholder="Amount" class="input input-bordered" required />
+                        <input id="input-amount-added" type="text" placeholder="Added Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
@@ -62,7 +62,7 @@
                   <!-- Add money form ends -->
 
                   <!-- Cash Widthdraw starts -->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="withdraw-form" class="hidden  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -90,5 +90,6 @@
     </main>
     
     <script src="./home.js"></script>
+    <script src="./features.js"></script>
   </body>
 </html>

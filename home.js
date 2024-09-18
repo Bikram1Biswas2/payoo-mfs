@@ -25,7 +25,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
         document.getElementById('available-balance').innerText = updatedBalance
             
     } else{
-        alert('Wrong Pin');
+        alert('Cant added Money');
     }
 })
 
