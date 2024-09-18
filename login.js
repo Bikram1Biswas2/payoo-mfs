@@ -13,9 +13,9 @@ document
 
     // bad way to validate
     if(phoneNumber === '5' && pinNumber === '1234'){
-        console.log('Successfully Logged In');
+       alert('Successfully Logged In');
         window.location.href = './home.html'
     }else{
-        console.log('incorrect number or pin');
+        alert('incorrect number or pin');
     }
   });
